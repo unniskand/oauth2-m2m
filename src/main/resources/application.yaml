@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: oauth2-m2m
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # The Auth0 Domain (must end with a trailing slash)
+          issuer-uri: ${ISSUER_URI}
+          # The API Identifier you set in the Auth0 Dashboard
+          audience: https://myapi.example.com
